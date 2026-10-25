@@ -1,0 +1,125 @@
+{
+  "context": {
+    "buildId": "01M5TF5Z4TJF115VCJB1GRREXZ",
+    "commitSha": "54844d1eca0f81ca413d7fc17aa98a1f99bc2866",
+    "parentBuildId": "01M5TB24FEV9057S43SS162594",
+    "repo": "jeffy555/terraform-onboarding-full-flow",
+    "workspace": "SpiritOps"
+  },
+  "edges": [
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_linux_web_app.app_spiritops_demo_dev"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_network_security_group.nsg_spiritops_demo_dev"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_role_assignment.reader_role_assignment"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_service_plan.asp_spiritops_demo_dev"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_storage_account.stspiritopsdemotest01"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_user_assigned_identity.id_spiritops_demo_dev"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_service_plan.asp_spiritops_demo_dev",
+      "target": "azurerm_linux_web_app.app_spiritops_demo_dev"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_user_assigned_identity.id_spiritops_demo_dev",
+      "target": "azurerm_role_assignment.reader_role_assignment"
+    }
+  ],
+  "generator": "spiritops-dagre-v1",
+  "nodes": [
+    {
+      "address": "azurerm_linux_web_app.app_spiritops_demo_dev",
+      "kind": "azurerm_linux_web_app",
+      "layer": "compute",
+      "name": "app-spiritops-demo-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_network_security_group.nsg_spiritops_demo_dev",
+      "kind": "azurerm_network_security_group",
+      "layer": "security",
+      "name": "nsg-spiritops-demo-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "kind": "azurerm_resource_group",
+      "layer": "compute",
+      "name": "rg-spiritops-demo-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_role_assignment.reader_role_assignment",
+      "kind": "azurerm_role_assignment",
+      "layer": "security",
+      "name": "726f0ead-3728-0936-6822-18ed8e49d0e6",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_service_plan.asp_spiritops_demo_dev",
+      "kind": "azurerm_service_plan",
+      "layer": "compute",
+      "name": "asp-spiritops-demo-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_storage_account.stspiritopsdemotest01",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "stspiritopsdemotest01",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_user_assigned_identity.id_spiritops_demo_dev",
+      "kind": "azurerm_user_assigned_identity",
+      "layer": "security",
+      "name": "id-spiritops-demo-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    }
+  ],
+  "version": 1
+}

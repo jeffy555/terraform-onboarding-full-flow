@@ -1,0 +1,33 @@
+{
+  "actor": "loavesflash@gmail.com",
+  "applied_at": null,
+  "approver": null,
+  "artifact_paths": {
+    "graphJson": ".spiritops/architecture/history/01M5TF5Z4TJF115VCJB1GRREXZ/graph.json",
+    "graphMmd": ".spiritops/architecture/history/01M5TF5Z4TJF115VCJB1GRREXZ/graph.mmd",
+    "graphSvg": ".spiritops/architecture/history/01M5TF5Z4TJF115VCJB1GRREXZ/graph.svg"
+  },
+  "blast_radius": 3,
+  "branch": "feature/new-module",
+  "build_id": "01M5TF5Z4TJF115VCJB1GRREXZ",
+  "commit_sha": "",
+  "created_at": "2026-10-25T21:24:03.920Z",
+  "diagram_hash": "50e8bac44fc49592e31f54d1363743f54cfd2f1614e241e8d8ef23c46d3f006f",
+  "drift_detected": false,
+  "duration_ms": null,
+  "intent_ids": [
+    "117202b0-d0b3-46c2-956f-5840206368c3"
+  ],
+  "parent_build_id": "01M5TB24FEV9057S43SS162594",
+  "patch_id": "apply:117202b0-d0b3-46c2-956f-5840206368c3",
+  "plan_summary": {
+    "add": 3,
+    "destroy": 0,
+    "drift": 0,
+    "modify": 0,
+    "replace": 0
+  },
+  "repo": "jeffy555/terraform-onboarding-full-flow",
+  "status": "planned",
+  "workspace_id": "e1b3b924-66d4-8a1e-a6af-9bce6a547afa"
+}
