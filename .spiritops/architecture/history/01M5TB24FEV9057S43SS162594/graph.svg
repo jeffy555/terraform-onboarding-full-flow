@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1104 484" role="img" aria-labelledby="title description" data-build-id="01M5TB24FEV9057S43SS162594">
+<title id="title">SpiritOps architecture</title>
+<desc id="description">Directional resource dependencies. Each node includes its change label and source link.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8cabb9"/></marker></defs>
+<rect width="1104" height="484" fill="#0b141b"/>
+<g font-family="sans-serif" fill="#e5f0f6"><text x="24" y="30" font-size="19">SpiritOps</text>
+<text x="24" y="53" font-size="12">Build 01M5TB24FEV9057S43SS162594 · Source uncommitted · Parent none</text>
+<text x="24" y="80" font-size="12" fill="#8cabb9">= Unchanged</text>
+<text x="156" y="80" font-size="12" fill="#45d99b">+ Create</text>
+<text x="288" y="80" font-size="12" fill="#f4c265">~ Modify</text>
+<text x="420" y="80" font-size="12" fill="#ff747e">− Destroy</text>
+<text x="552" y="80" font-size="12" fill="#ff747e">↻ Replace</text>
+<text x="684" y="80" font-size="12" fill="#ff9a4c">! Drift</text>
+<polyline points="304.67,312 370,340 412,340" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="328,262 370,262 552,262 734,262 776,253" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="304.67,212 370,184 412,184" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="692,184 734,184 776,193" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<g id="nfe07e5e70c45433f9e8025a4a370fd4dfadf120653035f64b0514bdc3a40c262" data-address="azurerm_network_security_group.nsg_spiritops_demo_dev" data-build-id="01M5TB24FEV9057S43SS162594">
+<title>azurerm_network_security_group.nsg_spiritops_demo_dev — Create</title><rect x="412" y="290" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="315" font-size="14">nsg-spiritops-demo-dev</text>
+<text x="424" y="338" font-size="11">azurerm_network_security_group</text>
+<text x="424" y="367" font-size="12" fill="#45d99b">+ Create</text>
+</g>
+<g id="n59bc55bf7437e0fb00a5e7c8a0586c7c8bfaa3bd9ee80be54a259083c4c227c1" data-address="azurerm_resource_group.rg_spiritops_demo_dev" data-build-id="01M5TB24FEV9057S43SS162594">
+<title>azurerm_resource_group.rg_spiritops_demo_dev — Create</title><rect x="48" y="212" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="60" y="237" font-size="14">rg-spiritops-demo-dev</text>
+<text x="60" y="260" font-size="11">azurerm_resource_group</text>
+<text x="60" y="289" font-size="12" fill="#45d99b">+ Create</text>
+</g>
+<g id="n385a88de0373abefec0d5524e98e58296ddcba70b9e3c74398e2be2d14ddcfba" data-address="azurerm_role_assignment.reader_role_assignment" data-build-id="01M5TB24FEV9057S43SS162594">
+<title>azurerm_role_assignment.reader_role_assignment — Create</title><rect x="776" y="173" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="788" y="198" font-size="14">azurerm_role_assignment.reader…</text>
+<text x="788" y="221" font-size="11">azurerm_role_assignment</text>
+<text x="788" y="250" font-size="12" fill="#45d99b">+ Create</text>
+</g>
+<g id="n337e9da0c57f16e599f088bcd95eb46617fc4d2bf8e55bcc1f600a2c16202d7a" data-address="azurerm_user_assigned_identity.id_spiritops_demo_dev" data-build-id="01M5TB24FEV9057S43SS162594">
+<title>azurerm_user_assigned_identity.id_spiritops_demo_dev — Create</title><rect x="412" y="134" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="159" font-size="14">id-spiritops-demo-dev</text>
+<text x="424" y="182" font-size="11">azurerm_user_assigned_identity</text>
+<text x="424" y="211" font-size="12" fill="#45d99b">+ Create</text>
+</g>
+</g></svg>

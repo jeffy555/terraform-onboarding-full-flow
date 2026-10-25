@@ -1,0 +1,75 @@
+{
+  "context": {
+    "buildId": "01M5TB24FEV9057S43SS162594",
+    "commitSha": "",
+    "parentBuildId": null,
+    "repo": "jeffy555/terraform-onboarding-full-flow",
+    "workspace": "SpiritOps"
+  },
+  "edges": [
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_network_security_group.nsg_spiritops_demo_dev"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_role_assignment.reader_role_assignment"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_user_assigned_identity.id_spiritops_demo_dev"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_user_assigned_identity.id_spiritops_demo_dev",
+      "target": "azurerm_role_assignment.reader_role_assignment"
+    }
+  ],
+  "generator": "spiritops-dagre-v1",
+  "nodes": [
+    {
+      "address": "azurerm_network_security_group.nsg_spiritops_demo_dev",
+      "kind": "azurerm_network_security_group",
+      "layer": "security",
+      "name": "nsg-spiritops-demo-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "kind": "azurerm_resource_group",
+      "layer": "compute",
+      "name": "rg-spiritops-demo-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_role_assignment.reader_role_assignment",
+      "kind": "azurerm_role_assignment",
+      "layer": "security",
+      "name": "azurerm_role_assignment.reader_role_assignment",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_user_assigned_identity.id_spiritops_demo_dev",
+      "kind": "azurerm_user_assigned_identity",
+      "layer": "security",
+      "name": "id-spiritops-demo-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    }
+  ],
+  "version": 1
+}
