@@ -1,12 +1,22 @@
 {
   "context": {
-    "buildId": "01M5TF5Z4TJF115VCJB1GRREXZ",
-    "commitSha": "54844d1eca0f81ca413d7fc17aa98a1f99bc2866",
-    "parentBuildId": "01M5TB24FEV9057S43SS162594",
+    "buildId": "01M5VHRZMDD2A1QPZQY752YGKV",
+    "commitSha": "c7a7008ebb530a3b17dcbe56100f040bf438959e",
+    "parentBuildId": "01M5TF5Z4TJF115VCJB1GRREXZ",
     "repo": "jeffy555/terraform-onboarding-full-flow",
     "workspace": "SpiritOps"
   },
   "edges": [
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_cognitive_account.cognitive_account[\"openai\"]"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_cognitive_account.cognitive_account[\"vision\"]"
+    },
     {
       "label": "depends on",
       "source": "azurerm_resource_group.rg_spiritops_demo_dev",
@@ -35,6 +45,31 @@
     {
       "label": "depends on",
       "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_storage_account.stspiritopsskill[\"test01\"]"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_storage_account.stspiritopsskill[\"test02\"]"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_storage_account.stspiritopsskill[\"test03\"]"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_storage_account.stspiritopsskill[\"test04\"]"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
+      "target": "azurerm_storage_account.stspiritopsskill[\"test05\"]"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.rg_spiritops_demo_dev",
       "target": "azurerm_user_assigned_identity.id_spiritops_demo_dev"
     },
     {
@@ -51,6 +86,26 @@
   "generator": "spiritops-dagre-v1",
   "nodes": [
     {
+      "address": "azurerm_cognitive_account.cognitive_account[\"openai\"]",
+      "kind": "azurerm_cognitive_account",
+      "layer": "compute",
+      "name": "aoai-spiritops-skill-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_cognitive_account.cognitive_account[\"vision\"]",
+      "kind": "azurerm_cognitive_account",
+      "layer": "compute",
+      "name": "vision-spiritops-skill-dev",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
       "address": "azurerm_linux_web_app.app_spiritops_demo_dev",
       "kind": "azurerm_linux_web_app",
       "layer": "compute",
@@ -58,7 +113,7 @@
       "source": {
         "path": "main.tf"
       },
-      "state": "create"
+      "state": "drift"
     },
     {
       "address": "azurerm_network_security_group.nsg_spiritops_demo_dev",
@@ -98,13 +153,63 @@
       "source": {
         "path": "main.tf"
       },
-      "state": "create"
+      "state": "unchanged"
     },
     {
       "address": "azurerm_storage_account.stspiritopsdemotest01",
       "kind": "azurerm_storage_account",
       "layer": "storage",
       "name": "stspiritopsdemotest01",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_storage_account.stspiritopsskill[\"test01\"]",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "stspiritopsskill2601",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_storage_account.stspiritopsskill[\"test02\"]",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "stspiritopsskill2602",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_storage_account.stspiritopsskill[\"test03\"]",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "stspiritopsskill2603",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_storage_account.stspiritopsskill[\"test04\"]",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "stspiritopsskill2604",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "azurerm_storage_account.stspiritopsskill[\"test05\"]",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "stspiritopsskill2605",
       "source": {
         "path": "main.tf"
       },

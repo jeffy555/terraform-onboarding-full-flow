@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1104 1747" role="img" aria-labelledby="title description" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<title id="title">SpiritOps architecture</title>
+<desc id="description">Directional resource dependencies. Each node includes its change label and source link.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8cabb9"/></marker></defs>
+<rect width="1104" height="1747" fill="#0b141b"/>
+<g font-family="sans-serif" fill="#e5f0f6"><text x="24" y="30" font-size="19">SpiritOps</text>
+<text x="24" y="53" font-size="12">Build 01M5VHRZMDD2A1QPZQY752YGKV · Source c7a7008e · Parent 01M5TF5Z4TJF115VCJB1GRREXZ</text>
+<text x="24" y="80" font-size="12" fill="#8cabb9">= Unchanged</text>
+<text x="156" y="80" font-size="12" fill="#45d99b">+ Create</text>
+<text x="288" y="80" font-size="12" fill="#f4c265">~ Modify</text>
+<text x="420" y="80" font-size="12" fill="#ff747e">− Destroy</text>
+<text x="552" y="80" font-size="12" fill="#ff747e">↻ Replace</text>
+<text x="684" y="80" font-size="12" fill="#ff9a4c">! Drift</text>
+<polyline points="199.15,950 370,184 412,184" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="201.38,950 370,320 412,320" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="202.17,1050 370,1642 552,1642 734,1642 776,1633" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="204.73,950 370,456 412,456" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="206.72,1050 370,1486 552,1486 734,1486 895.64,1089" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="204.13,1050 370,1564 412,1564" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="221.46,950 370,728 412,728" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="254.91,950 370,864 412,864" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="328,1000 370,1000 412,1000" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="254.91,1050 370,1136 412,1136" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="221.46,1050 370,1272 412,1272" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="210.3,1050 370,1408 412,1408" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="210.3,950 370,592 412,592" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="692,1564 734,1564 776,1573" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="692,592 734,592 895.64,989" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<g id="n0802edd44aa523d7a7b4c94a1eaf7e12fe46d0e46be0e5f545d6a581bf97c983" data-address="azurerm_cognitive_account.cognitive_account[&quot;openai&quot;]" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_cognitive_account.cognitive_account[&quot;openai&quot;] source">
+<title>azurerm_cognitive_account.cognitive_account[&quot;openai&quot;] — Create</title><rect x="412" y="134" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="159" font-size="14">aoai-spiritops-skill-dev</text>
+<text x="424" y="182" font-size="11">azurerm_cognitive_account</text>
+<text x="424" y="211" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="n677728a4b675c94547e48c2a4ecb517f9833eb769cc50a5f9edd801996ddd9da" data-address="azurerm_cognitive_account.cognitive_account[&quot;vision&quot;]" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_cognitive_account.cognitive_account[&quot;vision&quot;] source">
+<title>azurerm_cognitive_account.cognitive_account[&quot;vision&quot;] — Create</title><rect x="412" y="270" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="295" font-size="14">vision-spiritops-skill-dev</text>
+<text x="424" y="318" font-size="11">azurerm_cognitive_account</text>
+<text x="424" y="347" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="n0ef718c26f4cd3fe35035ef9304cbd28bc4518941dd40ba07ae4b16fc29d0202" data-address="azurerm_linux_web_app.app_spiritops_demo_dev" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_linux_web_app.app_spiritops_demo_dev source">
+<title>azurerm_linux_web_app.app_spiritops_demo_dev — Drift</title><rect x="776" y="1553" width="280" height="100" rx="10" fill="#12212b" stroke="#ff9a4c" stroke-width="2"/>
+<text x="788" y="1578" font-size="14">app-spiritops-demo-dev</text>
+<text x="788" y="1601" font-size="11">azurerm_linux_web_app</text>
+<text x="788" y="1630" font-size="12" fill="#ff9a4c">! Drift</text>
+</a>
+</g>
+<g id="nfe07e5e70c45433f9e8025a4a370fd4dfadf120653035f64b0514bdc3a40c262" data-address="azurerm_network_security_group.nsg_spiritops_demo_dev" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_network_security_group.nsg_spiritops_demo_dev source">
+<title>azurerm_network_security_group.nsg_spiritops_demo_dev — Unchanged</title><rect x="412" y="406" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="431" font-size="14">nsg-spiritops-demo-dev</text>
+<text x="424" y="454" font-size="11">azurerm_network_security_group</text>
+<text x="424" y="483" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n59bc55bf7437e0fb00a5e7c8a0586c7c8bfaa3bd9ee80be54a259083c4c227c1" data-address="azurerm_resource_group.rg_spiritops_demo_dev" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_resource_group.rg_spiritops_demo_dev source">
+<title>azurerm_resource_group.rg_spiritops_demo_dev — Unchanged</title><rect x="48" y="950" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="60" y="975" font-size="14">rg-spiritops-demo-dev</text>
+<text x="60" y="998" font-size="11">azurerm_resource_group</text>
+<text x="60" y="1027" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n385a88de0373abefec0d5524e98e58296ddcba70b9e3c74398e2be2d14ddcfba" data-address="azurerm_role_assignment.reader_role_assignment" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_role_assignment.reader_role_assignment source">
+<title>azurerm_role_assignment.reader_role_assignment — Unchanged</title><rect x="776" y="989" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="788" y="1014" font-size="14">726f0ead-3728-0936-6822-18ed8e…</text>
+<text x="788" y="1037" font-size="11">azurerm_role_assignment</text>
+<text x="788" y="1066" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n617382185b001256a91147d15315c7027036724e256ca6b098ecf52655cc2f2f" data-address="azurerm_service_plan.asp_spiritops_demo_dev" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_service_plan.asp_spiritops_demo_dev source">
+<title>azurerm_service_plan.asp_spiritops_demo_dev — Unchanged</title><rect x="412" y="1514" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="1539" font-size="14">asp-spiritops-demo-dev</text>
+<text x="424" y="1562" font-size="11">azurerm_service_plan</text>
+<text x="424" y="1591" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="nf8cdbf0d2487110d1e3acafc17d1ab3fb58f77a3c68b571d5b2327c65abcc582" data-address="azurerm_storage_account.stspiritopsdemotest01" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_storage_account.stspiritopsdemotest01 source">
+<title>azurerm_storage_account.stspiritopsdemotest01 — Unchanged</title><rect x="412" y="678" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="703" font-size="14">stspiritopsdemotest01</text>
+<text x="424" y="726" font-size="11">azurerm_storage_account</text>
+<text x="424" y="755" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="nc3745af686eb6cc8ee6f2efc623980d5f17354e978b49c8b091266d7c15a2597" data-address="azurerm_storage_account.stspiritopsskill[&quot;test01&quot;]" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_storage_account.stspiritopsskill[&quot;test01&quot;] source">
+<title>azurerm_storage_account.stspiritopsskill[&quot;test01&quot;] — Create</title><rect x="412" y="814" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="839" font-size="14">stspiritopsskill2601</text>
+<text x="424" y="862" font-size="11">azurerm_storage_account</text>
+<text x="424" y="891" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="n124d790b91a8e4b20bbdfdb99e2953c90622f7245d17e4fcc1353f3c8ee15b01" data-address="azurerm_storage_account.stspiritopsskill[&quot;test02&quot;]" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_storage_account.stspiritopsskill[&quot;test02&quot;] source">
+<title>azurerm_storage_account.stspiritopsskill[&quot;test02&quot;] — Create</title><rect x="412" y="950" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="975" font-size="14">stspiritopsskill2602</text>
+<text x="424" y="998" font-size="11">azurerm_storage_account</text>
+<text x="424" y="1027" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="ne50dd0f127c69874817d27d8bac55bc2090827081d0e735fb2fc7631e76f649c" data-address="azurerm_storage_account.stspiritopsskill[&quot;test03&quot;]" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_storage_account.stspiritopsskill[&quot;test03&quot;] source">
+<title>azurerm_storage_account.stspiritopsskill[&quot;test03&quot;] — Create</title><rect x="412" y="1086" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="1111" font-size="14">stspiritopsskill2603</text>
+<text x="424" y="1134" font-size="11">azurerm_storage_account</text>
+<text x="424" y="1163" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="n392f17f21a5a2640f6b55ba8442197129dfc2315d17c18551ebc14bbfc3c2afa" data-address="azurerm_storage_account.stspiritopsskill[&quot;test04&quot;]" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_storage_account.stspiritopsskill[&quot;test04&quot;] source">
+<title>azurerm_storage_account.stspiritopsskill[&quot;test04&quot;] — Create</title><rect x="412" y="1222" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="1247" font-size="14">stspiritopsskill2604</text>
+<text x="424" y="1270" font-size="11">azurerm_storage_account</text>
+<text x="424" y="1299" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="n45809cad8c15cd6e856182306e7e92e533d15f0c316f97ff648f425c3ea4d33f" data-address="azurerm_storage_account.stspiritopsskill[&quot;test05&quot;]" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_storage_account.stspiritopsskill[&quot;test05&quot;] source">
+<title>azurerm_storage_account.stspiritopsskill[&quot;test05&quot;] — Create</title><rect x="412" y="1358" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="1383" font-size="14">stspiritopsskill2605</text>
+<text x="424" y="1406" font-size="11">azurerm_storage_account</text>
+<text x="424" y="1435" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="n337e9da0c57f16e599f088bcd95eb46617fc4d2bf8e55bcc1f600a2c16202d7a" data-address="azurerm_user_assigned_identity.id_spiritops_demo_dev" data-build-id="01M5VHRZMDD2A1QPZQY752YGKV">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/c7a7008ebb530a3b17dcbe56100f040bf438959e/main.tf" aria-label="Open azurerm_user_assigned_identity.id_spiritops_demo_dev source">
+<title>azurerm_user_assigned_identity.id_spiritops_demo_dev — Unchanged</title><rect x="412" y="542" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="567" font-size="14">id-spiritops-demo-dev</text>
+<text x="424" y="590" font-size="11">azurerm_user_assigned_identity</text>
+<text x="424" y="619" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+</g></svg>

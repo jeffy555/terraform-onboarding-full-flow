@@ -65,3 +65,32 @@ resource "azurerm_storage_account" "stspiritopsdemotest01" {
   location                        = azurerm_resource_group.rg_spiritops_demo_dev.location
   tags                            = local.spiritops_required_tags
 }
+resource "azurerm_storage_account" "stspiritopsskill" {
+  for_each                        = var.storage_accounts
+  name                            = each.value.name
+  location                        = each.value.location
+  account_tier                    = each.value.account_tier
+  account_kind                    = each.value.account_kind
+  account_replication_type        = each.value.account_replication_type
+  min_tls_version                 = each.value.min_tls_version
+  https_traffic_only_enabled      = each.value.https_traffic_only_enabled
+  allow_nested_items_to_be_public = each.value.allow_nested_items_to_be_public
+  public_network_access_enabled   = each.value.public_network_access_enabled
+  shared_access_key_enabled       = each.value.shared_access_key_enabled
+  resource_group_name             = azurerm_resource_group.rg_spiritops_demo_dev.name
+  tags                            = local.spiritops_required_tags
+}
+
+resource "azurerm_cognitive_account" "cognitive_account" {
+  for_each                           = var.cognitive_accounts
+  name                               = each.value.name
+  kind                               = each.value.kind
+  sku_name                           = each.value.sku_name
+  location                           = each.value.location
+  custom_subdomain_name              = each.value.custom_subdomain_name
+  public_network_access_enabled      = each.value.public_network_access_enabled
+  local_auth_enabled                 = each.value.local_auth_enabled
+  outbound_network_access_restricted = each.value.outbound_network_access_restricted
+  resource_group_name                = azurerm_resource_group.rg_spiritops_demo_dev.name
+  tags                               = local.spiritops_required_tags
+}
