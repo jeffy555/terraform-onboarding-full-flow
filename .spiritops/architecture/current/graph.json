@@ -1,8 +1,8 @@
 {
   "context": {
-    "buildId": "01M61YMXS5BHS2W77H5Q3YKKDN",
-    "commitSha": "1b8025632e31f7087ac9837fb795ee0be6e65712",
-    "parentBuildId": "01M5VHRZMDD2A1QPZQY752YGKV",
+    "buildId": "01M627P809V3JW9AY0TGM0FB0S",
+    "commitSha": "e8ae928d89ad9781bd93c1f947069f87698dac46",
+    "parentBuildId": "01M61YMXS5BHS2W77H5Q3YKKDN",
     "repo": "jeffy555/terraform-onboarding-full-flow",
     "workspace": "SpiritOps"
   },
@@ -11,6 +11,11 @@
       "label": "depends on",
       "source": "module.foundation.azurerm_resource_group.main",
       "target": "module.foundation.azurerm_network_security_group.foundation"
+    },
+    {
+      "label": "depends on",
+      "source": "module.permissions.azurerm_user_assigned_identity.main",
+      "target": "module.permissions.azurerm_role_assignment.tag_access"
     }
   ],
   "generator": "spiritops-dagre-v1",
@@ -34,7 +39,7 @@
       "source": {
         "path": "aggregated-module-test/main.tf"
       },
-      "state": "create"
+      "state": "unchanged"
     },
     {
       "address": "module.foundation.azurerm_resource_group.main",
@@ -45,7 +50,50 @@
       "source": {
         "path": "aggregated-module-test/main.tf"
       },
+      "state": "unchanged"
+    },
+    {
+      "address": "module.permissions",
+      "kind": "Module",
+      "layer": "compute",
+      "name": "module.permissions",
+      "source": {
+        "path": "aggregated-module-test/main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "module.permissions.azurerm_network_security_group.test",
+      "kind": "azurerm_network_security_group",
+      "layer": "security",
+      "name": "nsg-spiritops-aggregate-permission-dev",
+      "parent": "module.permissions",
+      "source": {
+        "path": "aggregated-module-test/main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "module.permissions.azurerm_role_assignment.tag_access",
+      "kind": "azurerm_role_assignment",
+      "layer": "security",
+      "name": "module.permissions.azurerm_role_assignment.tag_access",
+      "parent": "module.permissions",
+      "source": {
+        "path": "aggregated-module-test/main.tf"
+      },
       "state": "create"
+    },
+    {
+      "address": "module.permissions.azurerm_user_assigned_identity.main",
+      "kind": "azurerm_user_assigned_identity",
+      "layer": "security",
+      "name": "id-spiritops-aggregate-permission-dev",
+      "parent": "module.permissions",
+      "source": {
+        "path": "aggregated-module-test/main.tf"
+      },
+      "state": "unchanged"
     },
     {
       "address": "module.security",
@@ -66,7 +114,7 @@
       "source": {
         "path": "aggregated-module-test/main.tf"
       },
-      "state": "create"
+      "state": "unchanged"
     }
   ],
   "version": 1

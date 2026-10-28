@@ -28,3 +28,13 @@ variable "security_name" {
   description = "The name of the Network Security Group."
 }
 
+variable "permissions_name" {
+  type        = string
+  description = "Managed identity name."
+}
+
+variable "permissions_network_security_group_name" {
+  type        = string
+  description = "Unattached test NSG name."
+}
+

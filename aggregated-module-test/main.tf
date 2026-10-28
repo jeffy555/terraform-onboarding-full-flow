@@ -18,3 +18,15 @@ module "security" {
   tags                = local.required_tags
 }
 
+# Pinned GitHub snapshot: git::https://github.com/jeffy555/terraform-onboarding-full-flow.git//modules/aggregated-permission-test?ref=e8ae928d89ad9781bd93c1f947069f87698dac46
+# Source digest: 70b02336b3a45d228eee7d218128379accbeaee3115b08e5bdd5916b33374845
+module "permissions" {
+  source                      = "./modules/permissions"
+  location                    = module.foundation.location
+  name                        = var.permissions_name
+  network_security_group_name = var.permissions_network_security_group_name
+  resource_group_name         = module.foundation.name
+  scope                       = module.foundation.id
+  tags                        = local.required_tags
+}
+
