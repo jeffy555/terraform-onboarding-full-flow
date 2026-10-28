@@ -1,0 +1,6 @@
+owner                                  = "platform-team"
+cost_center                            = "spiritops-test"
+foundation_location                    = "southindia"
+foundation_name                        = "rg-spiritops-aggregated-test-dev"
+foundation_network_security_group_name = "nsg-spiritops-aggregate-foundation-dev"
+security_name                          = "nsg-spiritops-aggregate-security-dev"

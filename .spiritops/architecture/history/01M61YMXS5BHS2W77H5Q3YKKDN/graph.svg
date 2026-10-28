@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 736" role="img" aria-labelledby="title description" data-build-id="01M61YMXS5BHS2W77H5Q3YKKDN">
+<title id="title">SpiritOps architecture</title>
+<desc id="description">Directional resource dependencies. Each node includes its change label and source link.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8cabb9"/></marker></defs>
+<rect width="920" height="736" fill="#0b141b"/>
+<g font-family="sans-serif" fill="#e5f0f6"><text x="24" y="30" font-size="19">SpiritOps</text>
+<text x="24" y="53" font-size="12">Build 01M61YMXS5BHS2W77H5Q3YKKDN · Source 1b802563 · Parent 01M5VHRZMDD2A1QPZQY752YGKV</text>
+<text x="24" y="80" font-size="12" fill="#8cabb9">= Unchanged</text>
+<text x="156" y="80" font-size="12" fill="#45d99b">+ Create</text>
+<text x="288" y="80" font-size="12" fill="#f4c265">~ Modify</text>
+<text x="420" y="80" font-size="12" fill="#ff747e">− Destroy</text>
+<text x="552" y="80" font-size="12" fill="#ff747e">↻ Replace</text>
+<text x="684" y="80" font-size="12" fill="#ff9a4c">! Drift</text>
+<polyline points="328,320 370,320 412,320" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<g id="n15cfb3c06432202a462cb4a3b87a042df203cfe80f304bba85294c7bc689af73" data-address="module.foundation" data-build-id="01M61YMXS5BHS2W77H5Q3YKKDN">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/1b8025632e31f7087ac9837fb795ee0be6e65712/aggregated-module-test/main.tf" aria-label="Open module.foundation source">
+<title>module.foundation — Unchanged</title><rect x="48" y="134" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="60" y="159" font-size="14">module.foundation</text>
+<text x="60" y="182" font-size="11">Module</text>
+<text x="60" y="211" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="nf308e341f6b9cc37ce9f1718154c9181a8e8eaccd371f6e371c48b5a27c2bbdd" data-address="module.foundation.azurerm_network_security_group.foundation" data-build-id="01M61YMXS5BHS2W77H5Q3YKKDN">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/1b8025632e31f7087ac9837fb795ee0be6e65712/aggregated-module-test/main.tf" aria-label="Open module.foundation.azurerm_network_security_group.foundation source">
+<title>module.foundation.azurerm_network_security_group.foundation — Create</title><rect x="412" y="270" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="424" y="295" font-size="14">nsg-spiritops-aggregate-founda…</text>
+<text x="424" y="318" font-size="11">azurerm_network_security_group</text>
+<text x="424" y="347" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="nfc39eb68e1e9d0cfcb50e9d9739eb0f013bdd9246a5599719ec7586aa15e6625" data-address="module.foundation.azurerm_resource_group.main" data-build-id="01M61YMXS5BHS2W77H5Q3YKKDN">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/1b8025632e31f7087ac9837fb795ee0be6e65712/aggregated-module-test/main.tf" aria-label="Open module.foundation.azurerm_resource_group.main source">
+<title>module.foundation.azurerm_resource_group.main — Create</title><rect x="48" y="270" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="60" y="295" font-size="14">rg-spiritops-aggregated-test-d…</text>
+<text x="60" y="318" font-size="11">azurerm_resource_group</text>
+<text x="60" y="347" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+<g id="n32f783a46a7079c5405d2ab03f5b187b3aad2a6c16265a4e107e687d5edd9135" data-address="module.security" data-build-id="01M61YMXS5BHS2W77H5Q3YKKDN">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/1b8025632e31f7087ac9837fb795ee0be6e65712/aggregated-module-test/main.tf" aria-label="Open module.security source">
+<title>module.security — Unchanged</title><rect x="48" y="406" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="60" y="431" font-size="14">module.security</text>
+<text x="60" y="454" font-size="11">Module</text>
+<text x="60" y="483" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n4775aa7a7c54fd0454d979352e53a51783a9a243bd2b57a7e619a1b479529cce" data-address="module.security.azurerm_network_security_group.main" data-build-id="01M61YMXS5BHS2W77H5Q3YKKDN">
+<a href="https://github.com/jeffy555/terraform-onboarding-full-flow/blob/1b8025632e31f7087ac9837fb795ee0be6e65712/aggregated-module-test/main.tf" aria-label="Open module.security.azurerm_network_security_group.main source">
+<title>module.security.azurerm_network_security_group.main — Create</title><rect x="48" y="542" width="280" height="100" rx="10" fill="#12212b" stroke="#45d99b" stroke-width="2"/>
+<text x="60" y="567" font-size="14">nsg-spiritops-aggregate-securi…</text>
+<text x="60" y="590" font-size="11">azurerm_network_security_group</text>
+<text x="60" y="619" font-size="12" fill="#45d99b">+ Create</text>
+</a>
+</g>
+</g></svg>

@@ -1,0 +1,73 @@
+{
+  "context": {
+    "buildId": "01M61YMXS5BHS2W77H5Q3YKKDN",
+    "commitSha": "1b8025632e31f7087ac9837fb795ee0be6e65712",
+    "parentBuildId": "01M5VHRZMDD2A1QPZQY752YGKV",
+    "repo": "jeffy555/terraform-onboarding-full-flow",
+    "workspace": "SpiritOps"
+  },
+  "edges": [
+    {
+      "label": "depends on",
+      "source": "module.foundation.azurerm_resource_group.main",
+      "target": "module.foundation.azurerm_network_security_group.foundation"
+    }
+  ],
+  "generator": "spiritops-dagre-v1",
+  "nodes": [
+    {
+      "address": "module.foundation",
+      "kind": "Module",
+      "layer": "compute",
+      "name": "module.foundation",
+      "source": {
+        "path": "aggregated-module-test/main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "module.foundation.azurerm_network_security_group.foundation",
+      "kind": "azurerm_network_security_group",
+      "layer": "security",
+      "name": "nsg-spiritops-aggregate-foundation-dev",
+      "parent": "module.foundation",
+      "source": {
+        "path": "aggregated-module-test/main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "module.foundation.azurerm_resource_group.main",
+      "kind": "azurerm_resource_group",
+      "layer": "compute",
+      "name": "rg-spiritops-aggregated-test-dev",
+      "parent": "module.foundation",
+      "source": {
+        "path": "aggregated-module-test/main.tf"
+      },
+      "state": "create"
+    },
+    {
+      "address": "module.security",
+      "kind": "Module",
+      "layer": "compute",
+      "name": "module.security",
+      "source": {
+        "path": "aggregated-module-test/main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "module.security.azurerm_network_security_group.main",
+      "kind": "azurerm_network_security_group",
+      "layer": "security",
+      "name": "nsg-spiritops-aggregate-security-dev",
+      "parent": "module.security",
+      "source": {
+        "path": "aggregated-module-test/main.tf"
+      },
+      "state": "create"
+    }
+  ],
+  "version": 1
+}
